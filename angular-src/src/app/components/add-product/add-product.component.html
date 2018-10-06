@@ -1,0 +1,31 @@
+<h2 class="page-header" >Add Product</h2>
+<form class="form-signin" (submit)="onProductSubmit()">
+        <div class="form-group">
+          <label for="Username">Name</label>
+          <input type="text" class="form-control" placeholder="Enter Product Name" [(ngModel)]="productName" name="productName">
+        </div>
+        <div class="form-group">
+          <label for="Password">Quantity</label>
+          <input type="text" class="form-control" placeholder="Enter Product Qty" [(ngModel)]="productQty" name="productQty">
+        </div>
+        <div class="form-group">
+          <label for="Quality">Quality</label>
+          <select [(ngModel)]="productype" name="productype" class="form-control">
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
+        
+        <input class="btn btn-lg btn-primary" type="submit" value="Add Product">
+</form>
